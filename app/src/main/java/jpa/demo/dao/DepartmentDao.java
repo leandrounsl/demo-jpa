@@ -21,7 +21,7 @@ public class DepartmentDao extends GenericDao<Department> {
 
 	@Override
 	public List<Department> getAll() {
-		Query query = entityManager.createQuery("SELECT e FROM Department e");
+		Query query = entityManager.createQuery("SELECT d FROM Department d");
 		return query.getResultList();
 	}
 
